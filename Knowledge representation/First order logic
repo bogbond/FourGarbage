@@ -1,0 +1,18 @@
+D = Dustbin   T = Truck   S = Sorted
+P = Plastic   PR = Paper   G = Glass
+W = Waste   O = Organic
+
+1. Sorted plastic dustbin goes to plastic truck
+For all x (P(x) and D(x) and S(x) --> P(x) and T(x))
+
+2. Sorted paper dustbin goes to paper truck
+For all x (PR(x) and D(x) and S(x) --> PR(X) and T(x))
+
+3. Sorted organic dustbin goes to organic truck
+For all x (O(x) and D(x) and S(x) --> O(X) and T(x))
+
+4. Sorted glass dustbin goes to glass truck
+For all x (G(x) and D(x) and S(x) --> G(X) and T(x))
+
+5. Any dustbin not sorted goes to waste truck
+For all x (D(x) and (not S(x)) --> W(x) and T(x))
